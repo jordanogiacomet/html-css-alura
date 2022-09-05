@@ -1,0 +1,71 @@
+
+/*
+Usar classe pois nem todas as li do site tem as configuracoes que essa
+Precisamos transformar a lista em in line do que um block.
+
+Porem ao inves de usar uma classe temos a tag nav. Importante estudar a semantica das tags.
+*/
+
+
+/*
+nav li indica para aplicar isso dentro de todos os elementos que estao na tag nav e seja li
+
+
+Visualmente queremos que nosso texto esteja em maiuscula. Porem semanticamente é melhor deixar ele em minusculo.
+
+
+
+O ponto inicial de uma tag como por exemplo fim de h1 e inicio de nav chamamos de ponto estatico, porem para trocarmos de posicionamento podemos usar a posicion absolute ou relative porem é mais indicado a absolute. Pois ela trata o conteudo como algo a parte
+*/
+
+
+/*
+
+A ideia é tratarmos a imagem e o menu como uma caixa que precisa ser centralizada. A web tem um padrao de wight de 940px. O menu é absouluto em relacao a caixa. Entre a margem e esse conteudo eu quero os 20px para cima
+
+
+Cada um dos blocos tem um contexto proprio
+
+*/
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
