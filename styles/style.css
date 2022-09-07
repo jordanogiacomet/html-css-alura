@@ -80,17 +80,18 @@ nav a:hover{
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .produtos li:hover{
-    border-color: blue;
+    border-color: gray;
 }
 
 .produtos li:hover h2{
     font-size: 34px;
 }
 
-produtos li:active{
+.produtos li:active{
     color: green;
 }
 
@@ -110,7 +111,7 @@ produtos li:active{
 
 footer{
     text-align: center;
-    background: url("bg.jpg");
+    background: url("/html-css-alura/images/bg.jpg");
     padding: 40px 0;
 }
 
@@ -118,4 +119,65 @@ footer{
     color: #FFFFFF; 
     font-size: 13px;
     margin: 20px 0 0;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}   
+
+form label, legend{
+    display:block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    border:none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
